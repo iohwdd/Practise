@@ -1,4 +1,5 @@
 #include<stdio.h>
+666 
 //int main()
 //{
 //	int a[10];
