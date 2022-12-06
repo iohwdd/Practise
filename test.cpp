@@ -1,5 +1,5 @@
 #include<stdio.h>
-666 22 
+
 //int main()
 //{
 //	int a[10];
