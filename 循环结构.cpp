@@ -1,5 +1,5 @@
 #include<stdio.h>
-#include<math.h>
+#include<math.h>5 
 //第i只鱼与0~i-1只鱼比较，若大于，则++
 //int main()
 //{
