@@ -1,5 +1,59 @@
 #include<stdio.h>
 #include<math.h>
+//第i只鱼与0~i-1只鱼比较，若大于，则++
+//int main()
+//{
+//	int n,arr[n];
+//	scanf("%d",&n);
+//	for(int i=0;i<n;i++)
+//	{
+//		scanf("%d",&arr[i]);
+//	}
+//	for(int i=0;i<n;i++)
+//	{
+//		int num=0;
+//		for(int j=0;j<=i-1;j++)
+//		{
+//			if(arr[i]>arr[j])num++;
+//		}
+//		printf("%d ",num);
+//	}
+//	return 0;
+// } 
+//1、判断余+300是否够用
+//2、若零花钱+余-预算>=100,存 (零花钱-预算)/100*100，余再- 
+//   否则直接-预算即可 
+//3、下一月余下基础上+300，
+//int main()
+//{
+//	int remain=0,account=0,arr[12]={0};
+//	for(int i=0;i<12;i++)
+//	{
+//		scanf("%d",&arr[i]);
+//	}
+//	for(int i=0;i<12;i++)
+//	{
+//		
+//		if(300+remain>=arr[i])
+//		{
+//			if(300+remain-arr[i]>=100)
+//			{
+//				account+=(300+remain-arr[i])/100*100;
+//				remain=(300+remain-arr[i])%100;
+//				continue;
+//			}
+//			remain=300+remain-arr[i];
+//		}
+//		else
+//		{
+//			printf("-%d",i+1);
+//			return 0;
+//		}
+//	}
+//	printf("%d",(int)(account*1.2)+remain);
+//	return 0;
+// } 
+//(7x+21k)*52=n,k从1开始求解x  
 //int main()
 //{
 //	int n;
