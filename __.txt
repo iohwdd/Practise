@@ -1,0 +1,27 @@
+一、下载开源项目
+1、复制项目SSH地址
+2、新建文件夹存放开源项目，在此运行git bash
+3、git clone SSH地址
+二、添加到自己的仓库里
+1、在文件资源管理器的适当位置新建文件夹（存放开源项目）
+2、在该位置下git bash
+3、git clone SSH地址（自己的仓库）
+将开源项目中的文件夹复制到文件资源管理器的适当位置
+4、git add -A 提交所有变化到暂存区
+5、git commit -m "first commit"  用于将暂存区内容添加到本地仓库中的命令
+6、git push -u origin main 将本地库中的内容发送给远程库
+三、修改开源项目
+
+     在开源项目文件夹中 git bash
+    
+     将要添加的文件复制到放开源项目的文件夹中
+     git pull origin main
+     git add -A
+     git commit -m "third commit"
+     git push -u origin main
+
+或
+1、将要添加的文件复制到放开源项目的文件夹中
+2、git add 文件名
+3、git commit -m""
+4、git push origin main
