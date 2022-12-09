@@ -1,5 +1,40 @@
 #include<stdio.h>
- 
+#include<stdlib.h>
+//void fun(char *s,char t[]){
+//	int i=0,k=0;
+//	while(*(s+i)!=0){
+//		if((int)*(s+i)%2==0)//保证是奇数 
+//			continue;
+//		t[k]=*(s+i);
+//		k++;
+//		i++;
+//	}
+//}
+//struct S{ 
+//	int n;
+//	int arr[];//柔性数组
+//} ;
+//struct s{
+//	int n;
+//	int *arr;
+//} ;
+//int main()
+//{
+//	struct S *ps=(struct S*)malloc(sizeof(struct S)+40);
+//	for(int i=0;i<10;i++)ps->arr[i]=i;
+//	for(int i=0;i<10;i++)printf("%d ",ps->arr[i]);
+//	free(ps);
+//	ps=null;
+//	struct s *ps=(struct s*)malloc(sizeof(struct s));
+//	if(ps=NULL)
+//		return 1;
+//	ps->arr=(int*)malloc(sizeof(int)*10);
+//	if(ps->arr=NULL)
+//		return 1;
+//	for(int i=0;i<10;i++)
+//		ps->arr[i]=i;
+//	return 0;
+//}
 //int main()
 //{
 //	int a[10];

@@ -1,4 +1,81 @@
 #include<stdio.h>
+int main()
+{
+//三组从1到s的数，求三个数的和出现概率最大的数，若多个相同输出最小的
+// 三个数组s1，s2，s3，循环赋值
+//三重嵌套循环，枚举任意三个数的和，和出现的次数存在容器t[1+s1*s2*s3] 中
+//遍历找出容器中数最大的一个，并输出下标【所求的数】 
+	int s1,s2,s3;
+	scanf("%d%d%d",&s1,&s2,&s3);
+	int a1[s1+1]={0},a2[s2+1]={0},a3[s3+1]={0};
+	int t[81]={0};
+	for(int i=1;i<=s1;i++)
+		a1[i]=i;
+	for(int i=1;i<=s2;i++)
+		a2[i]=i;
+	for(int i=1;i<=s3;i++)
+		a3[i]=i;
+	for(int i=1;i<=s1;i++)
+		for(int j=1;j<=s2;j++)
+			for(int k=1;k<=s3;k++){
+				t[a1[i]+a2[j]+a3[k]]++;
+			}
+	int min=80;
+	for(int i=1;i<=79;i++){
+		if(t[i]<t[i+1]&&min>t[i])
+			min=i;
+		else if(t[i]>t[i+1]&&min>t[i+1]){
+			min=i+1;
+		}
+	}
+	printf("%d",min);
+	return 0;
+}
+//int main()
+//{
+//T:n个数,求任意连续三个数的和的最小值	
+//n个数放在数组arr[n+1]中
+//把所有连续三个数的和存在t[]
+//枚举比较 
+//	int n;
+//	scanf("%d",&n);
+//	int arr[n+1]={0},t[1000],min=300;
+//	for(int i=1;i<=n;i++){
+//		scanf("%d",&arr[i]);
+//	}
+//	for(int i=1;i<=n-2;i++){
+//		t[i]=arr[i]+arr[i+1]+arr[i+2];
+//	}
+//	for(int i=1;i<=n-2;i++){
+//		if(t[i]<min)
+//			min=t[i];
+//	}
+//	printf("%d",min);
+//}
+//#define m 20001
+//int main()
+//{
+//	int n,ans=0,t[m]={0},g[m]={0};
+//	scanf("%d",&n);
+//	int a[n];
+//	for(int i=0;i<n;i++)
+//	{
+//		scanf("%d",&a[i]);
+//		g[a[i]]=1;
+//	}
+//	for(int i=0;i<n-1;i++)
+//		for(int j=i+1;j<n;j++)
+//			{
+//				t[a[i]+a[j]]++;
+//			}
+//	for(int i=1;i<=20000;i++)
+//	{
+//		if(t[i]!=0&&g[i]!=0)
+//			ans++;
+//	}
+//	printf("%d",ans);
+//	return 0;
+//}
 //实现第i个数与除第i个数以外任意两个数之和比较 
 //arr[i]  双for j,k==i continue arr[j]+arr[k] 
 //int main()
