@@ -1,5 +1,72 @@
 #include<stdio.h>
 #include<stdlib.h>
+#include<string.h>
+
+#include<stdio.h>
+enum DAY{MON=1, TUE, WED, THU=6, FRI, SAT, SUN}day;
+int main(){
+	scanf("%d",&day);
+	if(day==MON)
+    printf("%d",666);
+    
+    return 0;
+}
+
+
+//#define m 8
+//#ifdef m
+//#pragma message("m is defined")
+//#endif
+//	char buf[10]={0};
+//	fgets(buf,3,stdin);//留个\0 
+//	getchar();
+////	fputs(buf,stdout);
+//	printf("%s",buf); 
+//	return 0;
+//} 
+//struct s{
+//	char a;
+//	int b;
+//	float c;
+//};
+//int main(){
+//	struct s f={0};
+//	FILE*ptr=fopen("D:\\文档\\123.txt","r");
+//	if(fopen==NULL){
+//		perror("fopen");
+//		return 1;
+//	}
+////	fprintf(ptr,"%c %d %f",f.a,f.b,f.c);写
+////	fscanf(ptr,"%c %d %f",&(f.a),&(f.b),&(f.c));读 文本形式，ASCII码 
+//	
+//	fclose(ptr);
+//	ptr=NULL;
+//}
+//int main(){
+//	FILE* ptr=fopen("D:\\文档\\123.txt","r");
+//	if(ptr==NULL){
+//		perror("fopen");
+//		return 1;
+//	}
+//	int a=fputs("1234",ptr);
+////	printf("%d",a);//读写成功返回非0；失败返回-1（EOF） 
+//	char arr[10]={0};
+//	fgets(arr,3,ptr);
+//	printf("%s",arr);
+//	fgets(arr,3,ptr);
+//	printf("%s",arr);
+//	fclose(ptr);
+//	ptr=NULL;
+//	return 0;	
+//}
+//struct s{
+//	int a:1;
+//};
+//int main(){
+//	struct s s;
+//	printf("%d",s.a);
+//	return 0;
+//}
 //void fun(char *s,char t[]){
 //	int i=0,k=0;
 //	while(*(s+i)!=0){
@@ -339,7 +406,7 @@
 //	printf("%d",--n);
 //	return 0;
 // } 
-
+//
 //#include<stdio.h>
 //int
 //main(){
