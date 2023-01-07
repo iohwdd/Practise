@@ -1,15 +1,16 @@
-#include<stdio.h>
-#include<stdlib.h>
-#include<string.h>
+#include<iostream>
+#include<cstdio>
+#include<cstring>
 
-#include<stdio.h>
-enum DAY{MON=1, TUE, WED, THU=6, FRI, SAT, SUN}day;
-int main(){
-	scanf("%d",&day);
-	if(day==MON)
-    printf("%d",666);
-    
-    return 0;
+using namespace std;
+int main()
+{
+	// stdin: 123456
+	int a[6];
+	for(int i=0 ; i<6 ; i++) scanf("%1d",a+i);
+// ´ËÊ±£ºa[6] = {1,2,3,4,5,6}	
+
+	return 0;
 }
 
 
